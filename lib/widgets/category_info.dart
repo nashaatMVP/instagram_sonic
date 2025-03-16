@@ -13,8 +13,9 @@ class CategoryInfo extends StatelessWidget {
       children: [
         CustomText(
             txt: category,
+             color: Colors.blue.shade200,
         ),
-        SizedBox(height: 9,),
+        SizedBox(height: 4),
         Row(
           children: [
             Transform.rotate(
@@ -27,22 +28,22 @@ class CategoryInfo extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(height: 20,),
+        SizedBox(height: 17),
         Row(
           children: [
             SizedBox(
               height: 40,
-              width: (img.length * 27.0) + 10,
+              width: (img.length * 27.0) + 18,
               child: Stack(
                 children: [
                   for (int i = 0; i < img.length; i++)
                     Positioned(
-                      left: i * 22.0,
+                      left: i * 25.0,
                       child: CircleAvatar(
-                        backgroundColor: Colors.black,
                         radius: 20,
+                        backgroundColor: Colors.black,
                         child: CircleAvatar(
-                          radius: 19,
+                          radius: 18,
                           backgroundImage: NetworkImage(img[i]),
                         ),
                       ),
@@ -53,9 +54,10 @@ class CategoryInfo extends StatelessWidget {
             SizedBox(
               width: 310,
               child: CustomText(
-                txt: "Followed by vot444, a_ejfneef , frfrf and messi",
-                fontWeight: FontWeight.bold,
                 maxLines: 2,
+                fontWeight: FontWeight.bold,
+                fontSize: 13,
+                txt: "Followed by vot444, a_ejfneef , frfrf and messi",
               ),
             ),
           ],

@@ -4,7 +4,6 @@ import 'package:ionicons/ionicons.dart';
 import 'package:video_player/video_player.dart';
 import '../widgets/custom_text.dart';
 
-
 class VideoPage extends StatefulWidget {
   const VideoPage({super.key, required this.videLink, required this.userName, required this.userImg});
   final String videLink , userName , userImg;

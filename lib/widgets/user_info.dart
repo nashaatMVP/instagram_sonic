@@ -4,9 +4,9 @@ import 'package:flutter_insta_app/widgets/custom_text.dart';
 class UserInfo extends StatelessWidget {
   const UserInfo({
     super.key,
-    required this.userImg, required this.folowersNumber,
+    required this.userImg, required this.followersNumber, required this.postsNumber,
   });
-  final String userImg , folowersNumber;
+  final String userImg , followersNumber , postsNumber;
 
   @override
   Widget build(BuildContext context) {
@@ -30,36 +30,36 @@ class UserInfo extends StatelessWidget {
 
           ),
         ),
-        SizedBox(width: 20,),
+        SizedBox(width: 20),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             CustomText(
-                txt: "2",
+                txt: postsNumber,
                  fontWeight: FontWeight.bold,
                  fontSize: 18,
             ),
             CustomText(txt: "Posts"),
           ],
         ),
-        SizedBox(width: 30,),
+        SizedBox(width: 30),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             CustomText(
-                txt: folowersNumber,
+                txt: followersNumber,
                  fontWeight: FontWeight.bold,
                  fontSize: 18,
             ),
             CustomText(txt: "followers"),
           ],
         ),
-        SizedBox(width: 30,),
+        SizedBox(width: 30),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             CustomText(
-                txt: "300",
+                txt: "74",
                  fontWeight: FontWeight.bold,
                  fontSize: 18,
             ),
